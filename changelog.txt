@@ -1,4 +1,12 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.0.1
+Date: 20. 03. 2019
+  Changes:
+    - Added a Mod Option to enable Military Vehicle Equipment from Bob's Vehicle Equipment
+  Fixes:
+    - Bob's Vehicle Equipment can now be inserted into the Cargo Plane.
+    
+---------------------------------------------------------------------------------------------------
 Version: 1.0.0
 Date: 20. 03. 2019
   Changes:
