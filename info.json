@@ -1,15 +1,14 @@
 {
   "name": "AircraftCargoPlaneEquipment",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "factorio_version": "0.17",
   "title": "Aircraft - Cargo Plane Equipment Slots",
   "author": "Modernkennnern",
   "homepage": "https://mods.factorio.com/mod/AircraftCargoPlaneEquipment",
-  "description": "This mod adds upgraded Cargo Planes from the Aircraft mod with Equipment Slots.",
+  "description": "This mod improves the Cargo Planes from the Aircraft mod by adding a 8x4 Equipment Grid. More to be added in the future.",
   "dependencies": [
     "base > 0.17.0",
     "Aircraft >= 1.6.4",
-    "? bobvehicleequipment >= 0.17.0",
-    "? electric-vehicles-reborn >= 0.1.1"
+    "? bobvehicleequipment >= 0.17.0"
 	]
 }

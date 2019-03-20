@@ -1,4 +1,9 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.0.3
+Date: 20. 03. 2019
+  Changes:
+    - Removed Support for Electric Vehicles: Reborn. Previously this was an optional dependency, but it didn't actually work. I do not understand how it works (Even with 15x Fusion Creator MK6 and 10x High-Voltage Transformers, it still consumes fuel. I might add it back in the future.
+---------------------------------------------------------------------------------------------------
 Version: 1.0.2
 Date: 20. 03. 2019
   Changes:
