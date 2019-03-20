@@ -1,0 +1,1 @@
+data.raw["car"]["cargo-plane"].equipment_grid = "CargoPlane-equipment-grid"

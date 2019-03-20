@@ -1,0 +1,10 @@
+{
+  "name": "AircraftCargoPlaneEquipment",
+  "version": "1.0.0",
+  "factorio_version": "0.17",
+  "title": "Aircraft - Cargo Plane Equipment Slots",
+  "author": "Modernkennnern",
+  "homepage": "",
+  "dependencies": ["base", "Aircraft >= 1.6.4"],
+  "description": "This mod adds upgraded Cargo Planes from the Aircraft mod with Equipment Slots."
+}
