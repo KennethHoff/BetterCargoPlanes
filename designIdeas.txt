@@ -11,7 +11,11 @@ Cargo Plane (MK1)
 	- Fuel Effectivity: 1
 	- Weight: 3500
 	- Inventory Size: 120
-	- Guns: Cargo-Plane-Machine-Gun
+	- Guns: Submachine-Gun
+		- Range: 15
+		- Speed: 3ticks
+		- DmgMulti: 1
+		
 	
 		Movement:
 		- Breaking Power: 650kW
@@ -40,7 +44,10 @@ Cargo Plane MK2:
 	- Effectivity: 1.5 // Engine Effectivity
 	- Weight: 4000
 	- Inventory Size: 180
-	- Guns: Cargo-Plane-MK2-Rifle
+	- Guns: Rifle
+		- Range: 25
+		- Speed: 30ticks
+		- DmgMulti: 7
 	
 		Movement:
 		- Braking Power: 1500kW
@@ -68,7 +75,10 @@ Cargo Plane MK3:
 	- Fuel Effectivity: 2.5
 	- Weight: 4500
 	- Inventory Size: 240
-	- Guns: Cargo-Plane-MK3-Sniper-Rifle
+	- Guns: Sniper Rifle
+		- Range: 40
+		- Speed: 90ticks
+		- DmgMulti: 25
 	
 		Movement:
 		- Breaking Power: 2500kW

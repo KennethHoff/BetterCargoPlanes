@@ -1,4 +1,13 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.0.5
+Date: 21. 03. 2019
+  Features:
+    - Added Rifle for Better Cargo Plane and Sniper Rifle for Even Better Cargo Plane.
+      These are based on Bob's Warfare, both stats and art
+  Changes:
+    - Renamed the mod to "Better Cargo Planes" (from "Aircraft - Cargo Plane Equipment Slots") to make it more concise, and better reflect the features of the mod.
+
+---------------------------------------------------------------------------------------------------
 Version: 1.0.4
 Date: 21. 03. 2019
   Major Features:

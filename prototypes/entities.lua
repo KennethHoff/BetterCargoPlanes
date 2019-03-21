@@ -16,7 +16,7 @@ data:extend({
     type = "car",
     name = "better-cargo-plane",
     -- icon = "__Aircraft__/graphics/Cargo_Plane_Icon.png",
-    icon = "__AircraftCargoPlaneEquipment__/graphics/icons/better_cargo_plane/better_cargo_plane_icon.png",
+    icon = "__betterCargoPlanes__/graphics/icons/better_cargo_plane_icon.png",
     icon_size = 32,
     flags = {"placeable-neutral", "player-creation", "placeable-off-grid", "no-automated-item-removal"},
     has_belt_immunity = false,
@@ -87,6 +87,13 @@ data:extend({
             percent = 30
         }
     },
+    stop_trigger_speed = 0.2,
+    breaking_speed = 0.15,
+    open_sound = { filename = "__base__/sound/car-door-open.ogg", volume=0.7 },
+    close_sound = { filename = "__base__/sound/car-door-close.ogg", volume = 0.7 },
+    tank_driving = true,
+    equipment_grid = "Better-Cargo-Plane-Equipment-Grid",
+    guns = { "better-cargo-planes-rifle"},
     collision_box = {{-0.9, -1.3}, {0.9, 1.3}},
     collision_mask = {},
     selection_box = {{-0.9, -1.3}, {0.9, 1.3}},
@@ -112,7 +119,7 @@ data:extend({
     render_layer = "air-object", 
     final_render_layer = "air-object",
     animation = {
-        filename = "__AircraftCargoPlaneEquipment__/graphics/entity/better_cargo_plane/better_cargo_plane_spritesheet.png",
+        filename = "__betterCargoPlanes__/graphics/entity/better_cargo_plane_spritesheet.png",
         priority = "high",
         width = 224,
         height = 224,
@@ -145,14 +152,7 @@ data:extend({
             volume = 0.6
         },
         match_speed_to_activity = true,
-    },
-    stop_trigger_speed = 0.2,
-    breaking_speed = 0.15,
-    open_sound = { filename = "__base__/sound/car-door-open.ogg", volume=0.7 },
-    close_sound = { filename = "__base__/sound/car-door-close.ogg", volume = 0.7 },
-    tank_driving = true,
-    equipment_grid = "Better-Cargo-Plane-Equipment-Grid",
-    guns = { "cargo-plane-machine-gun"}
+    }
 },
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -160,7 +160,7 @@ data:extend({
     type = "car",
     name = "even-better-cargo-plane",
     -- icon = "__Aircraft__/graphics/Cargo_Plane_Icon.png",
-    icon = "__AircraftCargoPlaneEquipment__/graphics/icons/even_better_cargo_plane/even_better_cargo_plane_icon.png",
+    icon = "__betterCargoPlanes__/graphics/icons/even_better_cargo_plane_icon.png",
     icon_size = 32,
     flags = {"placeable-neutral", "player-creation", "placeable-off-grid", "no-automated-item-removal"},
     has_belt_immunity = false,
@@ -236,6 +236,14 @@ data:extend({
     selection_box = {{-0.9, -1.3}, {0.9, 1.3}},
 	selection_priority = 60,
     friction = 0.010,
+    stop_trigger_speed = 0.2,
+    breaking_speed = 0.15,
+    open_sound = { filename = "__base__/sound/car-door-open.ogg", volume=0.7 },
+    close_sound = { filename = "__base__/sound/car-door-close.ogg", volume = 0.7 },
+    tank_driving = true,
+    equipment_grid = "Even-Better-Cargo-Plane-Equipment-Grid",
+    guns = { "better-cargo-planes-sniper-rifle"},
+
     light = {
         {
             type = "oriented",
@@ -256,7 +264,7 @@ data:extend({
     render_layer = "air-object", 
     final_render_layer = "air-object",
     animation = {
-        filename = "__AircraftCargoPlaneEquipment__/graphics/entity/even_better_cargo_plane/even_better_cargo_plane_spritesheet.png",
+        filename = "__betterCargoPlanes__/graphics/entity/even_better_cargo_plane_spritesheet.png",
         priority = "high",
         width = 224,
         height = 224,
@@ -289,14 +297,7 @@ data:extend({
             volume = 0.6
         },
         match_speed_to_activity = true,
-    },
-    stop_trigger_speed = 0.2,
-    breaking_speed = 0.15,
-    open_sound = { filename = "__base__/sound/car-door-open.ogg", volume=0.7 },
-    close_sound = { filename = "__base__/sound/car-door-close.ogg", volume = 0.7 },
-    tank_driving = true,
-    equipment_grid = "Even-Better-Cargo-Plane-Equipment-Grid",
-    guns = { "cargo-plane-machine-gun"}
+    }
 }
 })
 

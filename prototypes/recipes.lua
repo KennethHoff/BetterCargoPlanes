@@ -44,7 +44,7 @@ data:extend({
             {"electric-engine-unit",100},
             {"processing-unit", 100},
             {"steel-chest", 50},
-            {"submachine-gun",2},
+            {"submachine-gun",1},
             {"better-cargo-plane", 1}
         },
         result = "even-better-cargo-plane"
@@ -57,7 +57,7 @@ data:extend({
             {"electric-engine-unit",200},
             {"processing-unit", 200},
             {"steel-chest", 50},
-            {"submachine-gun",2},
+            {"submachine-gun",1},
             {"better-cargo-plane", 1}
         },
         result = "even-better-cargo-plane"
