@@ -1,0 +1,86 @@
+Cargo Plane (MK1)
+
+	Technology:
+	- 1,2,4 x500
+	
+	Stats:
+	- Health: 500
+	- Equipment Grid: 8x4
+	- Fuel Inventory Size: 6
+	- Fuel Consumption: 1250kW
+	- Fuel Effectivity: 1
+	- Weight: 3500
+	- Inventory Size: 120
+	- Guns: Cargo-Plane-Machine-Gun
+	
+		Movement:
+		- Breaking Power: 650kW
+		- Rotation Speed: 0.006
+		- Acceleration per Energy: 0.15
+	
+	Resistances:
+	- Fire: 2/50%
+	- Physical: 2/30%
+	- Impact: 5/60%
+	- Explosion: 2/30%
+	- Acid: 0/20%
+	
+	
+
+Cargo Plane MK2:
+
+	Technology:
+	- 1,2,4,5,6 (all but Military & Space) * 1500
+
+	Stats:
+	- Health: 1000
+	- Equipment Grid: 10x8
+	- Fuel Inventory Size: 8
+	- Fuel Consumption: 2000kW
+	- Effectivity: 1.5 // Engine Effectivity
+	- Weight: 4000
+	- Inventory Size: 180
+	- Guns: Cargo-Plane-MK2-Rifle
+	
+		Movement:
+		- Braking Power: 1500kW
+		- Breaking Speed: 0.5
+		- Rotation Speed: 0.01
+		- Acceleration per Energy: 0.15
+	
+	Resistances:
+	- Fire: 5/60%
+	- Physical: 5/40%
+	- Impact: 10/70%
+	- Explosion: 5/40%
+	- Acid: 0/40%
+	
+Cargo Plane MK3:
+
+	Technology:
+	- 1,2,4,5,6,7 (All but Military) * 3000
+	
+	Stats:
+	- Health: 2000
+	- Equipment Grid: 13x12
+	- Fuel Inventory Size: 12
+	- Fuel Consumption: 4000kW
+	- Fuel Effectivity: 2.5
+	- Weight: 4500
+	- Inventory Size: 240
+	- Guns: Cargo-Plane-MK3-Sniper-Rifle
+	
+		Movement:
+		- Breaking Power: 2500kW
+		- Breaking Speed: 0.05
+		- Rotation Speed: 0.05
+		- Acceleration per Energy: 0.5
+	
+	Resistances:
+	- Fire: 10/70%
+	- Physical: 10/50%
+	- Impact: 20/80%
+	- Explosion: 10/50%
+	- Acid: 0/50%
+	
+Cargo Plane Mk4 (?)

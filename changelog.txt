@@ -1,8 +1,27 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.0.4
+Date: 21. 03. 2019
+  Major Features:
+    - Added the Better Cargo Plane, and the Even Better Cargo Plane
+      This is an early version, so there will be rebalancing.
+      These are temporary visuals. They all currently look like the original Cargo Plane
+  Features:
+    - The recipe for both the Better Cargo Plane, and the Even Better Cargo Plane has been adjusted for playing with Bob's Mods.
+      This includes, but not limited to:
+      Electrical engine units -> Vehicle Overdrive Motor / Vehicle Overdrive Engine
+      Submachine-gun -> Rifle / Sniper-Rifle
+  Minor Features:
+    - Added descriptions to Afterburner and Vehicle Energy Shield
+  Balancing:
+    - Increased Mining Time of all Aircraft to 5 seconds. (Up from 1). You will no longer accidentally disassemble your airplane.
+      This applies to Cargo Plane, Gunship, Jet, and Flying Fortress, as well as Better Cargo Plane, and Even Better Cargo Plane
+---------------------------------------------------------------------------------------------------
 Version: 1.0.3
 Date: 20. 03. 2019
   Changes:
-    - Removed Support for Electric Vehicles: Reborn. Previously this was an optional dependency, but it didn't actually work. I do not understand how it works (Even with 15x Fusion Creator MK6 and 10x High-Voltage Transformers, it still consumes fuel. I might add it back in the future.
+    - Removed Support for Electric Vehicles: Reborn. Previously this was an optional dependency, but it didn't actually work. 
+      I do not understand how it works, as even with 15x Fusion Creator MK6 and 10x High-Voltage Transformers, it still consumes fuel. 
+      I might add it back in the future if I find out how it works.
 ---------------------------------------------------------------------------------------------------
 Version: 1.0.2
 Date: 20. 03. 2019
