@@ -1,12 +1,3 @@
--- Replaces Submachine gun in the Better Cargo Plane recipe with Rifle if Bob's mods are detected.
-if data.raw.gun["rifle"] then
-    bobmods.lib.recipe.replace_ingredient("better-cargo-plane", "submachine-gun", "rifle");
-end
-
--- Replaces Submachine gun in the Better Cargo Plane recipe with Sniper Rifle if Bob's mods are detected.
-if data.raw.gun["sniper-rifle"] then
-    bobmods.lib.recipe.replace_ingredient("even-better-cargo-plane", "submachine-gun", "sniper-rifle")
-end
 -- Replaces Steel Chest in the Better Cargo Plane recipe with Brass Chest if Bob's mods are detected.
 if data.raw.item["brass-chest"] then
     bobmods.lib.recipe.replace_ingredient("better-cargo-plane", "steel-chest", "brass-chest")

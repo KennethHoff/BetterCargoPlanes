@@ -1,4 +1,25 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.0.6
+Date: 21. 03. 2019
+  Changes:
+    - Better Cargo Plane now uses Vehicle-Mounted Machine Gun.
+    - Even Better Cargo Plane now uses Flying Fortress Machine Gun.
+      - This was done to avoid potential breaking of license on Bob's Mods as well as to remove the need for Military Science Packs
+    - Moved all Cargo Planes to be inline in the Recipe window. This means that all 3 Cargo Planes are now before any other aircraft.
+  Graphics:
+    - New graphics for:
+      - Better Cargo Plane
+      - Even Better Cargo Plane
+  Balancing:
+    - Reverted recipe change from previous update. Recipe now requires Submachine guns again.
+      This is to make sure Military 
+    - Rebalanced movement speed of:
+      - Better Cargo Plane
+      - Even Better Cargo Plane
+    - Added Vehicle Overdrive Motor research as prerequisites for Better Cargo Plane if Bob's Mods are installed.
+    - Added Vehicle Overdrive Engine research as prerequisites for Even Better Cargo Plane if Bob's Mods are installed.
+    - Removed Utility Science Pack cost from Better Cargo Planes research as I felt the gap between the two upgraded planes were too short, as the only difference was Space Science.
+---------------------------------------------------------------------------------------------------
 Version: 1.0.5
 Date: 21. 03. 2019
   Features:
@@ -6,46 +27,3 @@ Date: 21. 03. 2019
       These are based on Bob's Warfare, both stats and art
   Changes:
     - Renamed the mod to "Better Cargo Planes" (from "Aircraft - Cargo Plane Equipment Slots") to make it more concise, and better reflect the features of the mod.
-
----------------------------------------------------------------------------------------------------
-Version: 1.0.4
-Date: 21. 03. 2019
-  Major Features:
-    - Added the Better Cargo Plane, and the Even Better Cargo Plane
-      This is an early version, so there will be rebalancing.
-      These are temporary visuals. They all currently look like the original Cargo Plane
-  Features:
-    - The recipe for both the Better Cargo Plane, and the Even Better Cargo Plane has been adjusted for playing with Bob's Mods.
-      This includes, but not limited to:
-      Electrical engine units -> Vehicle Overdrive Motor / Vehicle Overdrive Engine
-      Submachine-gun -> Rifle / Sniper-Rifle
-  Minor Features:
-    - Added descriptions to Afterburner and Vehicle Energy Shield
-  Balancing:
-    - Increased Mining Time of all Aircraft to 5 seconds. (Up from 1). You will no longer accidentally disassemble your airplane.
-      This applies to Cargo Plane, Gunship, Jet, and Flying Fortress, as well as Better Cargo Plane, and Even Better Cargo Plane
----------------------------------------------------------------------------------------------------
-Version: 1.0.3
-Date: 20. 03. 2019
-  Changes:
-    - Removed Support for Electric Vehicles: Reborn. Previously this was an optional dependency, but it didn't actually work. 
-      I do not understand how it works, as even with 15x Fusion Creator MK6 and 10x High-Voltage Transformers, it still consumes fuel. 
-      I might add it back in the future if I find out how it works.
----------------------------------------------------------------------------------------------------
-Version: 1.0.2
-Date: 20. 03. 2019
-  Changes:
-    - Added Bob's Vehicle Equipment and Electric Vehicles: Reborn as optional dependencies
-    - Added mods.factorio link as homepage
----------------------------------------------------------------------------------------------------
-Version: 1.0.1
-Date: 20. 03. 2019
-  Changes:
-    - Added a Mod Option to enable Military Vehicle Equipment from Bob's Vehicle Equipment
-  Fixes:
-    - Bob's Vehicle Equipment can now be inserted into the Cargo Plane.
----------------------------------------------------------------------------------------------------
-Version: 1.0.0
-Date: 20. 03. 2019
-  Changes:
-    - Initial mod.

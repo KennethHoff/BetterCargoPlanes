@@ -1,5 +1,6 @@
 data.raw["car"]["cargo-plane"].equipment_grid = "Cargo-Plane-Equipment-Grid"
 data.raw["car"]["cargo-plane"].minable.mining_time = 5
+
 data.raw["car"]["gunship"].minable.mining_time = 5
 data.raw["car"]["jet"].minable.mining_time = 5
 data.raw["car"]["flying-fortress"].minable.mining_time = 5
@@ -15,7 +16,6 @@ data:extend({
 { -- Better Cargo Plane
     type = "car",
     name = "better-cargo-plane",
-    -- icon = "__Aircraft__/graphics/Cargo_Plane_Icon.png",
     icon = "__betterCargoPlanes__/graphics/icons/better_cargo_plane_icon.png",
     icon_size = 32,
     flags = {"placeable-neutral", "player-creation", "placeable-off-grid", "no-automated-item-removal"},
@@ -28,16 +28,18 @@ data:extend({
 
     -- Stats
     max_health = 1000,
-    consumption = "2000kW", -- How much power the engine can use.
-    effectivity = 1.5, -- Engine Effectiveness (kW => Speed..)
-    braking_power = "1500kW", -- How effective the brakes are
+    consumption = "1875kW", -- How much power the engine can use.
+    effectivity = 1, -- Engine Effectiveness (kW => Speed..)
+    braking_power = "3000kW", -- How effective the brakes are
     acceleration_per_energy = 0.15, -- How much acceleration one kW adds.
     inventory_size = 180, -- Inventory Size
     rotation_speed = 0.01, -- How quickly it rotates
+    friction = 0.005, -- How much speed it loses over time. (Severely affects top-speed)
+    breaking_speed = 0.5,
     
 
 
-    weight = 4000, -- How much it weighs (Mostly used for collisions, which airplanes don't)
+    weight = 3000, -- How much it weighs (Mostly used for collisions, which airplanes don't)
 
     minable = {mining_time = 5, result = "better-cargo-plane"}, -- How long it takes to mine it, and which item to return when it's mined.
 
@@ -88,17 +90,15 @@ data:extend({
         }
     },
     stop_trigger_speed = 0.2,
-    breaking_speed = 0.15,
     open_sound = { filename = "__base__/sound/car-door-open.ogg", volume=0.7 },
     close_sound = { filename = "__base__/sound/car-door-close.ogg", volume = 0.7 },
     tank_driving = true,
     equipment_grid = "Better-Cargo-Plane-Equipment-Grid",
-    guns = { "better-cargo-planes-rifle"},
+    guns = { "aircraft-machine-gun"},
     collision_box = {{-0.9, -1.3}, {0.9, 1.3}},
     collision_mask = {},
     selection_box = {{-0.9, -1.3}, {0.9, 1.3}},
 	selection_priority = 60,
-    friction = 0.010,
     light = {
         {
             type = "oriented",
@@ -159,7 +159,6 @@ data:extend({
 { -- Even Better Cargo Plane
     type = "car",
     name = "even-better-cargo-plane",
-    -- icon = "__Aircraft__/graphics/Cargo_Plane_Icon.png",
     icon = "__betterCargoPlanes__/graphics/icons/even_better_cargo_plane_icon.png",
     icon_size = 32,
     flags = {"placeable-neutral", "player-creation", "placeable-off-grid", "no-automated-item-removal"},
@@ -172,16 +171,18 @@ data:extend({
 
     -- Stats
     max_health = 2000,
-    consumption = "3500kW", -- How much power the engine can use.
-    effectivity = 2, -- Engine Effectiveness (kW => Speed..)
-    braking_power = "3500kW", -- How effective the brakes are
-    acceleration_per_energy = 0.15, -- How much acceleration one kW adds.
+    consumption = "2500kW", -- How much power the engine can use.
+    effectivity = 1.25, -- Engine Effectiveness (kW => Speed..)
+    braking_power = "10000kW", -- How effective the brakes are
+    acceleration_per_energy = 1, -- How much acceleration one kW adds.
     inventory_size = 240, -- Inventory Size
     rotation_speed = 0.015, -- How quickly it rotates
+    friction = 0.0025, -- How much speed it loses over time. (Severely affects top-speed)
+    breaking_speed = 1,
     
 
 
-    weight = 4500, -- How much it weighs (Mostly used for collisions, which airplanes don't)
+    weight = 2500, -- How much it weighs (Mostly used for collisions, which airplanes don't)
 
     minable = {mining_time = 5, result = "even-better-cargo-plane"}, -- How long it takes to mine it, and which item to return when it's mined.
 
@@ -235,14 +236,12 @@ data:extend({
     collision_mask = {},
     selection_box = {{-0.9, -1.3}, {0.9, 1.3}},
 	selection_priority = 60,
-    friction = 0.010,
     stop_trigger_speed = 0.2,
-    breaking_speed = 0.15,
     open_sound = { filename = "__base__/sound/car-door-open.ogg", volume=0.7 },
     close_sound = { filename = "__base__/sound/car-door-close.ogg", volume = 0.7 },
     tank_driving = true,
     equipment_grid = "Even-Better-Cargo-Plane-Equipment-Grid",
-    guns = { "better-cargo-planes-sniper-rifle"},
+    guns = { "flying-fortress-machine-gun"},
 
     light = {
         {

@@ -42,7 +42,7 @@ Cargo Plane MK2:
 	- Fuel Inventory Size: 8
 	- Fuel Consumption: 2000kW
 	- Effectivity: 1.5 // Engine Effectivity
-	- Weight: 4000
+	- Weight: 3000
 	- Inventory Size: 180
 	- Guns: Rifle
 		- Range: 25
@@ -73,7 +73,7 @@ Cargo Plane MK3:
 	- Fuel Inventory Size: 12
 	- Fuel Consumption: 4000kW
 	- Fuel Effectivity: 2.5
-	- Weight: 4500
+	- Weight: 2500
 	- Inventory Size: 240
 	- Guns: Sniper Rifle
 		- Range: 40
