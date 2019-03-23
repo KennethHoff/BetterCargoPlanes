@@ -33,7 +33,7 @@ data:extend({
     name = "even-better-cargo-planes",
     icon = "__betterCargoPlanes__/graphics/technologies/even_better_cargo_plane_technology.png",
     icon_size = 128,
-    prerequisites = {"better-cargo-planes"},
+    prerequisites = {"better-cargo-planes", "space-science-pack"}, }
     effects = {
         {
             type = "unlock-recipe",
