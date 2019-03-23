@@ -1,9 +1,15 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.0.8
+Date: 24. 03. 2019
+  Locale:
+    - Added Russian Localization (Thanks IgorLutiy)
+---------------------------------------------------------------------------------------------------
 Version: 1.0.7
 Date: 23. 03. 2019
   Changes:
     - Added Space Science Pack as Prerequisite for Even Better Cargo Planes research.
-	- Added Russian Localization (Thanks IgorLutiy)
+  Locale:
+    - Added Russian Localization (Thanks IgorLutiy)
 ---------------------------------------------------------------------------------------------------
 Version: 1.0.6
 Date: 21. 03. 2019
