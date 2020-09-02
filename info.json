@@ -8,10 +8,6 @@
   "description": "This mod aims to improve the Cargo Plane from the Aircraft mod by adding an Equipment Grid as well as two upgraded versions of the Cargo Plane. It's designed to be as faithful to the basegame and Aircraft as possible",
   "dependencies": [
     "base >= 1.0.0",
-    "Aircraft >= 1.7.1",
-    "? bobvehicleequipment >= 0.18.1",
-    "? bobwarfare >= 0.18.4",
-    "? boblogistics >= 0.18.7",
-    "? bobplates >= 0.18.6"
+    "Aircraft >= 1.7.1"
 	]
 } 

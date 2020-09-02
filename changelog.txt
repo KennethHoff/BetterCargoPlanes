@@ -1,9 +1,10 @@
-Version 1.2.0
+---------------------------------------------------------------------------------------------------
+Version: 1.2.0
 Date: 02. 09. 2020
-	Changes:
-		- Updated to 1.0.0
-		- Added configuration for inventory size - including the default plane. Thanks to 'CreativeAnarchy' for the suggestion
-		- Both new Cargo Planes now respects the 'Inserter Immunity' option in the Aircraft mod.    
+  Changes:
+    - Updated to 1.0.0
+    - Added configuration for inventory size - including the default plane. Thanks to 'CreativeAnarchy' for the suggestion
+    - Both new Cargo Planes now respects the 'Inserter Immunity' option in the Aircraft mod.    
 ---------------------------------------------------------------------------------------------------
 Version: 1.1.0
 Date: 14. 04. 2020
