@@ -7,10 +7,9 @@ data:extend({
         order="aa",
     },
     
+    
+    
     -- Inventory Size Configuration
-
-
-
     {
         type = "int-setting",
         name = "betterCargoPlanes-inventorySizeT1",

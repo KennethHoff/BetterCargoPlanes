@@ -1,11 +1,3 @@
-data.raw["car"]["cargo-plane"].equipment_grid = "Cargo-Plane-Equipment-Grid"
-data.raw["car"]["cargo-plane"].minable.mining_time = 5
-
-data.raw["car"]["gunship"].minable.mining_time = 5
-data.raw["car"]["jet"].minable.mining_time = 5
-data.raw["car"]["flying-fortress"].minable.mining_time = 5
-
-
 local planes = {
     ["better-cargo-plane"] = {volume = 0.4, belt_immunity = true},
     ["even-better-cargo-plane"] = {volume = 0.4, belt_immunity = true}
@@ -18,7 +10,7 @@ data:extend({
     name = "better-cargo-plane",
     icon = "__betterCargoPlanes__/graphics/icons/better_cargo_plane_icon.png",
     icon_size = 32,
-    flags = {"placeable-neutral", "player-creation", "placeable-off-grid", "no-automated-item-removal"},
+    flags = {"placeable-neutral", "player-creation", "placeable-off-grid"},
     has_belt_immunity = false,
     corpse = "medium-remnants",
     dying_explosion = "medium-explosion",
@@ -161,7 +153,7 @@ data:extend({
     name = "even-better-cargo-plane",
     icon = "__betterCargoPlanes__/graphics/icons/even_better_cargo_plane_icon.png",
     icon_size = 32,
-    flags = {"placeable-neutral", "player-creation", "placeable-off-grid", "no-automated-item-removal"},
+    flags = {"placeable-neutral", "player-creation", "placeable-off-grid"},
     has_belt_immunity = false,
     corpse = "medium-remnants",
     dying_explosion = "medium-explosion",
