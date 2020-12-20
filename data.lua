@@ -8,5 +8,3 @@ require("prototypes.entity-updates")
 
 require("prototypes.recipe-updates") --Mod Compatibility
 require("prototypes.technologies-updates") --Mod Compatibility
-
-
