@@ -1,12 +1,12 @@
 {
-  "name": "betterCargoPlanes",
-  "version": "1.3.0",
-  "factorio_version": "1.1",
-  "title": "Better Cargo Planes",
-  "author": "Modernkennnern",
-  "homepage": "https://mods.factorio.com/mod/betterCargoPlanes",
-  "description": "This mod aims to improve the Cargo Plane from the Aircraft mod by adding an Equipment Grid as well as two upgraded versions of the Cargo Plane. It's designed to be as faithful to the basegame and Aircraft as possible",
-  "dependencies": [
-    "Aircraft >= 1.7.2"
-	]
+	"name": "betterCargoPlanes",
+	"version": "1.3.0",
+	"factorio_version": "1.1",
+	"title": "Better Cargo Planes",
+	"author": "Modernkennnern",
+	"homepage": "https://mods.factorio.com/mod/betterCargoPlanes",
+	"description": "This mod aims to improve the Cargo Plane from the Aircraft mod by adding an Equipment Grid as well as two upgraded versions of the Cargo Plane. It's designed to be as faithful to the basegame and Aircraft as possible",
+	"dependencies": [
+	"Aircraft >= 1.7.2"
+]
 } 

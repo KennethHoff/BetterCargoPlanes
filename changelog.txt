@@ -4,6 +4,7 @@ Date: 20. 12. 2020
   Changes:
     - Ported to 1.1.0
     - Added Support for Krastorio 2 (Thanks 'Sodyaler' for the request)
+    - Cargo planes _finally_ works as Haulers in AAI.
 ---------------------------------------------------------------------------------------------------
 Version: 1.2.0
 Date: 02. 09. 2020
