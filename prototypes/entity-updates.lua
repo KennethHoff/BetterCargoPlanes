@@ -1,4 +1,3 @@
-﻿data.raw["car"]["cargo-plane"].equipment_grid = "Cargo-Plane-Equipment-Grid"
 
 -- The mining time is a little too quick for my liking. Upped it 5 times ( 1 -> 5)
 data.raw["car"]["cargo-plane"].minable.mining_time = 5

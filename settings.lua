@@ -22,7 +22,7 @@ data:extend({
         name = "betterCargoPlanes-inventorySizeT2",
         setting_type = "startup",
         default_value = 180,
-        order="ia"
+        order="ib"
     },
 
     {
@@ -30,7 +30,7 @@ data:extend({
         name = "betterCargoPlanes-inventorySizeT3",
         setting_type = "startup",
         default_value = 240,
-        order="ia"
+        order="ic"
     },
     
 })
