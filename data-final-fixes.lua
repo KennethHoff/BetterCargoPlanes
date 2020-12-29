@@ -1,1 +1,1 @@
-data.raw["car"]["cargo-plane"].equipment_grid = "Cargo-Plane-Equipment-Grid"
+require("prototypes.compatability.Krastorio2_Equipment_Final-Fixes");
