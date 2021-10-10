@@ -6,7 +6,7 @@
 	"author": "Modernkennnern",
 	"description": "This mod aims to improve the Cargo Plane from the Aircraft mod by adding an Equipment Grid as well as two upgraded versions of the Cargo Plane.",
 	"dependencies": [
-		"Aircraft >= 1.7.2",
-		"(?) Krastorio2 >= 1.0.19"
-	]
+	"Aircraft >= 1.7.2",
+	"(?) Krastorio2 >= 1.0.19"
+]
 } 
