@@ -1,0 +1,35 @@
+# This is a basic workflow to help you get started with Actions
+
+name: Create Release
+
+# Controls when the workflow will run
+on:
+  push:
+    # Sequence of patterns matched against refs/tags
+    tags:
+      - 'v*' # Push events to matching v*, i.e. v1.0, v20.15.10
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "build"
+  build:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      - name: get version
+        id: version
+        uses: notiz-dev/github-action-json-property@release
+        with: 
+          path: 'info.json'
+          prop_path: 'version'
+      - run: echo ${{steps.version.outputs.prop}} 
+      
+      - name: Zips files
+        uses: vimtor/action-zip@v1
+        with:
+          dest: releases/Release_${{steps.version.outputs.prop}} 
