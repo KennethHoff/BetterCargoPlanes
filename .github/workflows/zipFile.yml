@@ -21,15 +21,19 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      - name: get version
-        id: version
-        uses: notiz-dev/github-action-json-property@release
-        with: 
-          path: 'info.json'
-          prop_path: 'version'
-      - run: echo ${{steps.version.outputs.prop}} 
+      - id: set_var
+        run: |
+          content=`cat ./info.json`
+          # the following lines are only required for multi line json
+          content="${content//'%'/'%25'}"
+          content="${content//$'\n'/'%0A'}"
+          content="${content//$'\r'/'%0D'}"
+          # end of optional handling for multi line json
+          echo "::set-output name=packageJson::$content"
+      - run: |
+          echo "${{fromJson(steps.set_var.outputs.packageJson).version}}"
       
       - name: Zips files
         uses: vimtor/action-zip@v1
         with:
-          dest: releases/Release_${{steps.version.outputs.prop}} 
+          dest: "releases/Release_${{fromJson(steps.set_var.outputs.packageJson).version}}"
