@@ -15,14 +15,14 @@ data:extend({
         name = "betterCargoPlanes-inventorySizeT1",
         setting_type = "startup",
         default_value = 120,
-        order="ia"
+        order="inva"
     },
     {
         type = "int-setting",
         name = "betterCargoPlanes-inventorySizeT2",
         setting_type = "startup",
         default_value = 180,
-        order="ib"
+        order="invb"
     },
 
     {
@@ -30,7 +30,31 @@ data:extend({
         name = "betterCargoPlanes-inventorySizeT3",
         setting_type = "startup",
         default_value = 240,
-        order="ic"
+        order="invc"
+    },
+
+    -- Rotation Speed Configuration
+    {
+        type = "double-setting",
+        name = "betterCargoPlanes-rotationSpeedT1",
+        setting_type = "startup",
+        default_value = 0.006,
+        order="rsa"
+    },
+    {
+        type = "double-setting",
+        name = "betterCargoPlanes-rotationSpeedT2",
+        setting_type = "startup",
+        default_value = 0.006,
+        order="rsb"
+    },
+
+    {
+        type = "double-setting",
+        name = "betterCargoPlanes-rotationSpeedT3",
+        setting_type = "startup",
+        default_value = 0.006,
+        order="rsc"
     },
     
 })
