@@ -7,7 +7,7 @@ Date: 10. 10. 2021
 ---------------------------------------------------------------------------------------------------
 Version: 1.3.3
 Date: 29. 12. 2020
-  compatibility:
+  Compatability:
     - Krastorio 2 no longer overwrites the Cargo Plane's Equipment Grid
 ---------------------------------------------------------------------------------------------------
 Version: 1.3.2
@@ -24,7 +24,7 @@ Version: 1.3.0
 Date: 20. 12. 2020
   Changes:
     - Ported to 1.1.0
-  compatibility:
+  Compatability:
     - Added Support for Krastorio 2 (Thanks 'Sodyaler' for the request)
     - Cargo planes now properly works as Haulers in AAI.
 ---------------------------------------------------------------------------------------------------
