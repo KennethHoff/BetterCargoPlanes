@@ -384,7 +384,7 @@ local evenBetterCargoPlane = {
 
 
 
-data:extend(betterCargoPlane, evenBetterCargoPlane)
+data:extend({betterCargoPlane, evenBetterCargoPlane})
 
 
 -- Copied straight from the Aircraft mod.
