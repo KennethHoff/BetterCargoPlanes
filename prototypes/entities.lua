@@ -1,8 +1,65 @@
+local GRAPHICSPATH = "__betterCargoPlanes__/graphics/"
+local ICONPATH = GRAPHICSPATH .. "/icons/"
+local ENTITYPATH = GRAPHICSPATH .. "/entity/"
+
+
+--region Copy-Pasta code
+
+local function addCommonAimLines(anim)
+    for _, layer in pairs(anim.layers) do
+        layer.width, layer.height = 224, 224
+        layer.hr_version.width, layer.hr_version.height = 448, 448
+        layer.hr_version.scale = 0.5
+        layer.frame_count, layer.hr_version.frame_count = 1, 1
+        layer.direction_count, layer.hr_version.direction_count = 36, 36
+        layer.line_length, layer.hr_version.line_length = 6, 6
+        layer.max_advance, layer.hr_version.max_advance = 1, 1
+    end
+    return anim
+end
+
+local function airplaneAnimation(name)
+    local anim = {}
+    anim.layers = {
+        {
+            filename = ENTITYPATH .. name .. "/" .. name .. "_spritesheet.png",
+            shift = util.by_pixel(9, -10),
+            hr_version = {
+                filename = ENTITYPATH .. name .. "/hr-" .. name .. "_spritesheet.png",
+                shift = util.by_pixel(9, -10),
+            }
+        },
+        {
+            filename = ENTITYPATH .. name .. "/" .. name .. "_spritesheet-shadow.png",
+            shift = util.by_pixel(54, 35),
+            draw_as_shadow = true,
+            hr_version = {
+                filename = ENTITYPATH .. name .. "/hr-" .. name .. "_spritesheet-shadow.png",
+                shift = util.by_pixel(54, 35),
+                draw_as_shadow = true,
+            }
+        }
+    }
+    addCommonAimLines(anim)
+    return anim
+end
+
+local function resist(type, decrease, percent)
+    return {
+        type = type,
+        decrease = decrease,
+        percent = percent
+    }
+end
+--endregion
+
 local planes = {
     ["better-cargo-plane"] = { volume = 0.4, belt_immunity = true },
     ["even-better-cargo-plane"] = { volume = 0.4, belt_immunity = true }
 }
 
+--region Old Cargo plane creation
+--
 local betterCargoPlane = {
     type = "car",
     name = "better-cargo-plane",
@@ -284,7 +341,51 @@ local evenBetterCargoPlane = {
     }
 }
 
+--endregion
+
+--region Better Cargo Plane
+--betterCargoPlane = table.deepcopy(data.raw["car"]["cargo-plane"])
+--
+---- Metadata
+--betterCargoPlane.icon = "__betterCargoPlanes__/graphics/icons/better_cargo_plane_icon.png";
+--
+---- Equipment and guns
+--betterCargoPlane.equipment_grid = "Better-Cargo-Plane-Equipment-Grid"
+--betterCargoPlane.guns = { "flying-fortress-machine-gun" }
+--
+--betterCargoPlane.animation = airplaneAnimation("better_cargo_plane")
+--
+---- Stats
+--betterCargoPlane.max_health = 1000
+--betterCargoPlane.minable = { mining_time = 5, result = "better-cargo-plane" } -- How long it takes to mine it, and which item to return when it's mined.
+--
+--betterCargoPlane.consumption = "1875kW" -- How much power the engine can use.
+--betterCargoPlane.effectivity = 1 -- Engine Effectiveness (kW => Speed..)
+--betterCargoPlane.acceleration_per_energy = 0.15 -- How much acceleration one kW adds.
+--
+---- Movement
+--betterCargoPlane.braking_power = "3000kW" -- How effective the brakes are
+--betterCargoPlane.rotation_speed = 0.01 -- How quickly it rotates
+--betterCargoPlane.friction = 0.005 -- How much speed it loses over time. (Severely affects top-speed)
+--betterCargoPlane.breaking_speed = 0.5
+--
+--betterCargoPlane.inventory_size = 180
+--
+---- Resistances
+--betterCargoPlane.resistances = {
+--    resist("fire", 10, 70),
+--    resist("physical", 10, 50),
+--    resist("impact", 20, 80),
+--    resist("explosion", 10, 50),
+--    resist("acid", 0, 40)
+--}
+
+--endregion
+
+
+
 data:extend(betterCargoPlane, evenBetterCargoPlane)
+
 
 -- Copied straight from the Aircraft mod.
 for k, v in pairs(planes) do
