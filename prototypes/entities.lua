@@ -22,7 +22,7 @@ local function createPlane(planeNameWithDashes, guns, maxHealth, powerConsumptio
 
 	-- Metadata
 	newPlane.name = planeNameWithDashes
-	newPlane.icon = iconPath .. planeNameWithUnderscores .. "_icon.png"
+	--newPlane.icon = iconPath .. planeNameWithUnderscores .. "_icon.png"
 
 	-- Equipment and guns
 	newPlane.equipment_grid = planeNameWithDashes .. "-equipment-grid"
@@ -50,48 +50,6 @@ local function createPlane(planeNameWithDashes, guns, maxHealth, powerConsumptio
 
 	return newPlane;
 end
-
---region Better Cargo Plane
-
-betterCargoPlane = table.deepcopy(data.raw["car"]["cargo-plane"])
-
--- Metadata
-betterCargoPlane.icon = "__betterCargoPlanes__/graphics/icons/better_cargo_plane_icon.png";
-
--- Equipment and guns
-betterCargoPlane.equipment_grid = "Better-Cargo-Plane-Equipment-Grid"
-betterCargoPlane.guns = { "flying-fortress-machine-gun" }
-
-betterCargoPlane.animation.filename = "__betterCargoPlanes__/graphics/entity/better_cargo_plane_spritesheet.png"
-
--- Stats
-betterCargoPlane.max_health = 1000
-betterCargoPlane.minable = { mining_time = 5, result = "better-cargo-plane" } -- How long it takes to mine it, and which item to return when it's mined.
-
-betterCargoPlane.consumption = "1875kW" -- How much power the engine can use.
-betterCargoPlane.effectivity = 1 -- Engine Effectiveness (kW => Speed..)
-betterCargoPlane.acceleration_per_energy = 0.15 -- How much acceleration one kW adds.
-
--- Movement
-betterCargoPlane.braking_power = "3000kW" -- How effective the brakes are
-betterCargoPlane.rotation_speed = 0.01 -- How quickly it rotates
-betterCargoPlane.friction = 0.005 -- How much speed it loses over time. (Severely affects top-speed)
-betterCargoPlane.breaking_speed = 0.5
-
-betterCargoPlane.inventory_size = 180
-
--- Resistances
-
-betterCargoPlane.resistances = {
-	resist("fire", 10, 70),
-	resist("physical", 10, 50),
-	resist("impact", 20, 80),
-	resist("explosion", 10, 50),
-	resist("acid", 0, 40)
-}
-
---endregion
-
 
 betterCargoPlaneResistances = {
 	resist("fire", 5, 60),
