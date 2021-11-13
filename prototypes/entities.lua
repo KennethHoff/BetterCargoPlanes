@@ -45,8 +45,11 @@ local function createPlane(planeNameWithDashes, guns, maxHealth, powerConsumptio
     -- Animation
     newPlaneBaseEntityPath = entityPath .. planeNameWithUnderscores
 
-    newPlane.animation.layers[1].filename = newPlaneBaseEntityPath .. "/" .. planeNameWithUnderscores .. "_spritesheet_shadowless.png"
-    newPlane.animation.layers[2].filename = newPlaneBaseEntityPath .. "/" .. planeNameWithUnderscores .. "_spritesheet.png"
+    newPlane.animation.layers[1].filename = newPlaneBaseEntityPath .. "/" .. planeNameWithUnderscores .. "_spritesheet.png"
+    newPlane.animation.layers[1].hr_version.filename = newPlaneBaseEntityPath .. "/hr-" .. planeNameWithUnderscores .. "_spritesheet.png"
+
+    --newPlane.animation.layers[2].filename = newPlaneBaseEntityPath .. "/" .. planeNameWithUnderscores .. "_spritesheet-shadow.png"
+    --newPlane.animation.layers[2].hr_version.filename = newPlaneBaseEntityPath .. "/hr-" .. planeNameWithUnderscores .. "_spritesheet-shadow.png"
 
     return newPlane;
 end
