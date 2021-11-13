@@ -32,12 +32,12 @@ local function createPlane(planeNameWithDashes, guns, maxHealth, powerConsumptio
     newPlane.max_health = maxHealth
     newPlane.minable = { mining_time = 5, result = planeNameWithDashes}
 
-    newPlane.consumption = powerConsumption
+    newPlane.consumption = tostring(powerConsumption) .. "kW"
     newPlane.effectivity = powerEffectivity
     newPlane.acceleration_per_energy = accelPerEnergy
 
     -- Movement
-    newPlane.braking_power = breakingPower
+    newPlane.braking_power = tostring(breakingPower) .. "kW"
 
     -- Resistances
     newPlane.resistances = resistances
@@ -100,7 +100,7 @@ betterCargoPlaneResistances = {
     resist("explosion", 6, 40),
     resist("acid", 0, 30)
 }
-betterCargoPlane = createPlane("better-cargo-plane", { "flying-fortress-machine-gun" }, 1000, "1875kW", 1, 0.15, "3000kW", betterCargoPlaneResistances)
+betterCargoPlane = createPlane("better-cargo-plane", { "flying-fortress-machine-gun" }, 1000, 1875, 1, 0.15, 3000, betterCargoPlaneResistances)
 
 evenBetterCargoPlaneResistances = {
     resist("fire", 10, 70),
@@ -109,6 +109,6 @@ evenBetterCargoPlaneResistances = {
     resist("explosion", 10, 50),
     resist("acid", 0, 40)
 }
-evenBetterCargoPlane = createPlane("even-better-cargo-plane", { "flying-fortress-machine-gun" }, 2000, "2500kW", 1.25, 1, "10000kW", evenBetterCargoPlaneResistances)
+evenBetterCargoPlane = createPlane("even-better-cargo-plane", { "flying-fortress-machine-gun" }, 2000, 2500, 1.25, 1, 10000, evenBetterCargoPlaneResistances)
 
 data:extend({betterCargoPlane, evenBetterCargoPlane})
