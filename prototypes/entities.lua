@@ -1,6 +1,6 @@
 local graphicsPath = "__betterCargoPlanes__/graphics/"
-local iconPath = graphicsPath .. "/icons/"
-local entityPath = graphicsPath .. "/entity/"
+local iconPath = graphicsPath .. "icons/"
+local entityPath = graphicsPath .. "entity/"
 
 
 --region Copy-Pasta code
@@ -42,15 +42,12 @@ local function createPlane(planeNameWithDashes, guns, maxHealth, powerConsumptio
     newPlane.resistances = resistances
 
     -- Animation
-    entityFolder = entityPath .. planeNameWithUnderscores
-    newPlane.animation[1].filename = entityFolder .. "/" .. planeNameWithUnderscores .. "_spritesheet_shadowless.png"
-    newPlane.animation[2].filename = entityFolder .. "/" .. planeNameWithUnderscores .. "_spritesheet.png"
-end
+    newPlaneBaseEntityPath = entityPath .. planeNameWithUnderscores
 
-local planes = {
-    ["better-cargo-plane"] = { volume = 0.4, belt_immunity = true },
-    ["even-better-cargo-plane"] = { volume = 0.4, belt_immunity = true }
-}
+    newPlane.animation.layers[1].filename = newPlaneBaseEntityPath .. "/" .. planeNameWithUnderscores .. "_spritesheet_shadowless.png"
+    newPlane.animation.layers[2].filename = newPlaneBaseEntityPath .. "/" .. planeNameWithUnderscores .. "_spritesheet.png"
+
+end
 
 --region Better Cargo Plane
 
