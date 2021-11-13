@@ -21,6 +21,7 @@ local function createPlane(planeNameWithDashes, guns, maxHealth, powerConsumptio
     planeNameWithUnderscores = string.gsub(planeNameWithDashes, "-", "_");
 
     -- Metadata
+    newPlane.name = planeNameWithDashes
     newPlane.icon = iconPath .. planeNameWithUnderscores .. "_icon.png"
 
     -- Equipment and guns
