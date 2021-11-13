@@ -1,4 +1,13 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.3.6
+Date: 13. 11. 2021
+  Changes:
+    - Changes by snouz:
+    - New mod icon
+    - Improved entity / icon color
+    - Added proper tech icons
+    - Optimized all PNG
+---------------------------------------------------------------------------------------------------
 Version: 1.3.5
 Date: 13. 11. 2021
   Changes:
@@ -40,7 +49,7 @@ Date: 02. 09. 2020
   Changes:
     - Updated to 1.0.0
     - Added configuration for inventory size - including the default plane. Thanks to 'CreativeAnarchy' for the suggestion
-    - Both new Cargo Planes now respects the 'Inserter Immunity' option in the Aircraft mod.    
+    - Both new Cargo Planes now respects the 'Inserter Immunity' option in the Aircraft mod.
 ---------------------------------------------------------------------------------------------------
 Version: 1.1.0
 Date: 14. 04. 2020
@@ -70,7 +79,6 @@ Date: 21. 03. 2019
       - Even Better Cargo Plane
   Balance:
     - Reverted recipe change from previous update. Recipe now requires Submachine guns again.
-      This is to make sure Military 
     - Rebalanced movement speed of:
       - Better Cargo Plane
       - Even Better Cargo Plane
