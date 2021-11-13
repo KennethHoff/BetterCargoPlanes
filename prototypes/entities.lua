@@ -47,6 +47,7 @@ local function createPlane(planeNameWithDashes, guns, maxHealth, powerConsumptio
     newPlane.animation.layers[1].filename = newPlaneBaseEntityPath .. "/" .. planeNameWithUnderscores .. "_spritesheet_shadowless.png"
     newPlane.animation.layers[2].filename = newPlaneBaseEntityPath .. "/" .. planeNameWithUnderscores .. "_spritesheet.png"
 
+    return newPlane;
 end
 
 --region Better Cargo Plane
