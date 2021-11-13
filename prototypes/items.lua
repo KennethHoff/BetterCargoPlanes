@@ -7,7 +7,7 @@ data:extend({
 		type = "item-with-entity-data",
 		name = "better-cargo-plane",
 		icon = "__betterCargoPlanes__/graphics/icons/better_cargo_plane_icon.png", -- Temporary visual
-		icon_size = 32,
+		icon_size = 64,
 		flags = {},
 		subgroup = "transport",
 		order = "b[personal-transport]-e-b",
@@ -19,7 +19,7 @@ data:extend({
 		type = "item-with-entity-data",
 		name = "even-better-cargo-plane",
 		icon = "__betterCargoPlanes__/graphics/icons/even_better_cargo_plane_icon.png", -- Temporary visual
-		icon_size = 32,
+		icon_size = 64,
 		flags = {},
 		subgroup = "transport",
 		order = "b[personal-transport]-e-c",

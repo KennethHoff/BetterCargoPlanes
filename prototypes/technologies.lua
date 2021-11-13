@@ -3,8 +3,8 @@ data:extend({
 	{ -- Better Cargo Planes
 		type = "technology",
 		name = "better-cargo-planes",
-		icon = "__betterCargoPlanes__/graphics/technologies/better_cargo_plane_technology.png",
-		icon_size = 128,
+		icon = "__betterCargoPlanes__/graphics/icons/better_cargo_plane_icon.png",
+		icon_size = 64,
 		prerequisites = { "cargo-planes" },
 		effects = {
 			{
@@ -29,8 +29,8 @@ data:extend({
 	{ -- Even Better Cargo Planes
 		type = "technology",
 		name = "even-better-cargo-planes",
-		icon = "__betterCargoPlanes__/graphics/technologies/even_better_cargo_plane_technology.png",
-		icon_size = 128,
+		icon = "__betterCargoPlanes__/graphics/icons/even_better_cargo_plane_icon.png",
+		icon_size = 64,
 		prerequisites = { "better-cargo-planes", "space-science-pack" },
 		effects = {
 			{
