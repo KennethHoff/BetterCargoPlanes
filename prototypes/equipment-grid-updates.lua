@@ -9,11 +9,11 @@ local function AddEquipmentCategories(equipment_category)
 end
 
 if settings.startup["non-combat-mode"].value == false then
-	
+
 	AddEquipmentCategories("vehicle");
 
 	if settings.startup["betterCargoPlanes-MilitaryEquipment"].value == true then
-	
+
 		if data.raw["equipment-category"]["armoured-vehicle"] then
 			AddEquipmentCategories("armoured-vehicle");
 		end
