@@ -25,7 +25,7 @@ local function createPlane(planeNameWithDashes, guns, maxHealth, powerConsumptio
     newPlane.icon = iconPath .. planeNameWithUnderscores .. "_icon.png"
 
     -- Equipment and guns
-    newPlane.equipment_grid = planeNameWithDashes .. "equipment-grid"
+    newPlane.equipment_grid = planeNameWithDashes .. "-equipment-grid"
     newPlane.guns = guns
 
     -- Stats
