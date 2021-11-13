@@ -32,12 +32,12 @@ local function createPlane(planeNameWithDashes, guns, maxHealth, powerConsumptio
     newPlane.max_health = maxHealth
     newPlane.minable = { mining_time = 5, result = planeNameWithDashes}
 
-    newPlane.consumption = tostring(powerConsumption) .. "kw"
+    newPlane.consumption = powerConsumption .. "kw"
     newPlane.effectivity = powerEffectivity
     newPlane.acceleration_per_energy = accelPerEnergy
 
     -- Movement
-    newPlane.braking_power = tostring(breakingPower) .. "kw"
+    newPlane.braking_power = breakingPower .. "kw"
 
     -- Resistances
     newPlane.resistances = resistances
