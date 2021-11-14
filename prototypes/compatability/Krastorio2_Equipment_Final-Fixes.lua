@@ -1,7 +1,8 @@
-cargoPlaneGridName = "kr-cargo-plane-grid"
+krastorio2GridName = "kr-cargo-plane-grid"
 
-if data.raw["equipment-grid"][cargoPlaneGridName] then
-	data.raw["equipment-grid"][cargoPlaneGridName].width = data.raw["equipment-grid"]["Cargo-Plane-Equipment-Grid"].width
-	data.raw["equipment-grid"][cargoPlaneGridName].height = data.raw["equipment-grid"]["Cargo-Plane-Equipment-Grid"].height
-	data.raw["equipment-grid"][cargoPlaneGridName].equipment_categories = data.raw["equipment-grid"]["Cargo-Plane-Equipment-Grid"].equipment_categories
+if data.raw["equipment-grid"][krastorio2GridName] then
+	newGrid = table.deepcopy(data.raw["equipment-grid"]["cargo-plane-equipment-grid"])
+	newGrid.name = krastorio2GridName
+
+	data.raw["equipment-grid"][krastorio2GridName] = newGrid
 end
