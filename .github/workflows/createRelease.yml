@@ -8,10 +8,6 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@master
+    - uses: actions/checkout@v2
     - name: Archive Release
-      uses: thedoctor0/zip-release@master
-      with:
-        type: 'zip'
-        filename: 'releases/release.zip'
-        exclusions: '*.git* /*node_modules/* .editorconfig releases/*'
+      run: git archive -o releases/release.zip HEAD
